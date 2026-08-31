@@ -2,7 +2,7 @@
 
 Aplikasi manajemen tugas berbasis **Command Line Interface (CLI)** yang dibangun menggunakan Python dan library [`rich`](https://github.com/Textualize/rich) untuk tampilan tabel dan teks berwarna. Aplikasi ini memungkinkan pengguna untuk melihat, menambah, menandai selesai, dan menghapus tugas secara interaktif melalui terminal.
 
-## ✨ Fitur
+## Fitur
 
 - **Lihat Semua Tugas** — Menampilkan seluruh tugas dalam bentuk tabel rapi dengan kolom ID, Judul, Deskripsi, Status, dan Estimasi Waktu.
 - **Tambah Tugas** — Menambahkan tugas baru dengan ID yang di-generate otomatis (increment dari ID terbesar).
@@ -10,7 +10,7 @@ Aplikasi manajemen tugas berbasis **Command Line Interface (CLI)** yang dibangun
 - **Hapus Tugas** — Menghapus tugas dari daftar dengan konfirmasi (`y/n`) untuk mencegah penghapusan tidak sengaja.
 - **Validasi Input** — Menangani input tidak valid (bukan angka, angka negatif, atau nol) tanpa membuat program crash.
 
-## 📂 Struktur Proyek
+## Struktur Proyek
 
 ```
 .
@@ -22,12 +22,12 @@ Aplikasi manajemen tugas berbasis **Command Line Interface (CLI)** yang dibangun
 └── README.md                   # Dokumentasi proyek
 ```
 
-## 🔧 Requirement
+## Requirement
 
 - Python 3.10+ (karena menggunakan type hint `int | None`)
 - Library [`rich`](https://pypi.org/project/rich/)
 
-## 🚀 Instalasi
+## Instalasi
 
 1. Clone atau unduh proyek ini.
 2. Buat virtual environment (opsional, tapi disarankan):
@@ -41,7 +41,7 @@ Aplikasi manajemen tugas berbasis **Command Line Interface (CLI)** yang dibangun
    pip install rich
    ```
 
-## ▶️ Cara Menjalankan
+## Cara Menjalankan
 
 ```bash
 python main.py
@@ -62,7 +62,7 @@ Masukkan pilihan Anda (1-5):
 
 Masukkan angka `1`–`5` sesuai fitur yang ingin digunakan.
 
-## 🧩 Struktur Data Tugas
+## Struktur Data Tugas
 
 Setiap tugas disimpan sebagai `dictionary` dengan struktur berikut:
 
@@ -78,7 +78,7 @@ Setiap tugas disimpan sebagai `dictionary` dengan struktur berikut:
 
 Seluruh tugas disimpan sementara (in-memory) dalam list `dummy_tasks` — data akan hilang setiap kali program ditutup (belum ada persistensi ke file/database).
 
-## 📖 Dokumentasi Fungsi
+## Dokumentasi Fungsi
 
 ### Fungsi Pembantu
 
@@ -97,7 +97,7 @@ Seluruh tugas disimpan sementara (in-memory) dalam list `dummy_tasks` — data a
 | `hapus_tugas()` | Menghapus tugas berdasarkan ID dengan konfirmasi pengguna. |
 | `menu()` | Loop utama aplikasi yang menampilkan menu dan mengarahkan ke fungsi terkait. |
 
-## 🧪 Testing
+## Testing
 
 Proyek ini dilengkapi unit test menggunakan `unittest` dan `unittest.mock` untuk mensimulasikan input/output konsol.
 
@@ -123,7 +123,7 @@ python -m unittest test_todo.py
 - **test_tandai_selesai.py** — Daftar kosong, input non-angka, ID tidak ditemukan, berhasil ditandai, dan tugas yang sudah selesai sebelumnya.
 - **test_hapus_tugas.py** — Daftar kosong, input non-angka, ID tidak ditemukan, berhasil dihapus, dan pembatalan penghapusan.
 
-## ⚠️ Batasan (Known Limitations)
+## Batasan (Known Limitations)
 
 - Data tidak disimpan secara permanen (tidak ada file JSON/database), sehingga akan reset setiap program dijalankan ulang.
 - Belum ada fitur edit/update judul, deskripsi, atau estimasi waktu tugas yang sudah ada.
