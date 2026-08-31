@@ -128,6 +128,6 @@ python -m unittest test_todo.py
 - Data tidak disimpan secara permanen (tidak ada file JSON/database), sehingga akan reset setiap program dijalankan ulang.
 - Belum ada fitur edit/update judul, deskripsi, atau estimasi waktu tugas yang sudah ada.
 
-## 👤 Author
+## Author
 
 Dibuat sebagai proyek latihan Python CLI dengan dari Dicoding dan saya melakukan pendekatan pada penggunaan `rich`, validasi input, dan unit testing.
