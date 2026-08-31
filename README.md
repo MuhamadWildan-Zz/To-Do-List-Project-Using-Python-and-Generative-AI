@@ -1,4 +1,4 @@
-# 📝 To-Do List CLI
+# To-Do List CLI
 
 Aplikasi manajemen tugas berbasis **Command Line Interface (CLI)** yang dibangun menggunakan Python dan library [`rich`](https://github.com/Textualize/rich) untuk tampilan tabel dan teks berwarna. Aplikasi ini memungkinkan pengguna untuk melihat, menambah, menandai selesai, dan menghapus tugas secara interaktif melalui terminal.
 
@@ -130,4 +130,4 @@ python -m unittest test_todo.py
 
 ## 👤 Author
 
-Dibuat sebagai proyek latihan Python CLI dengan fokus pada penggunaan `rich`, validasi input, dan unit testing.
+Dibuat sebagai proyek latihan Python CLI dengan dari Dicoding dan saya melakukan pendekatan pada penggunaan `rich`, validasi input, dan unit testing.
